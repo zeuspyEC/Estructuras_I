@@ -1,0 +1,19 @@
+Algoritmo Escritura;
+
+y, suma <- variables de tipo entero
+
+Matriz = arreglo [1..3][1..5] de enteros
+Repetir con i desde 1 hasta 3
+	Repetir con j desde 1 hasta 5
+		Matriz[i][j] <- y
+		y <- y + 1
+	Fin repetir
+Fin repetir
+Fin algoritmo
+
+Algoritmo Suma;
+
+suma <- Matriz[0][2] + Matriz[1][0] + Matriz[1][4]
+Escribir suma
+
+Fin algoritmo
