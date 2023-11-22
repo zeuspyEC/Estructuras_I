@@ -1,0 +1,17 @@
+Algoritmo
+Infijo:
+|2|^|(|5|-|2|)|x|2|
+|0|1|2|3|4|5|6|7|8|
+1.	Obtener carácter a Repetir 2-4
+2.	Si numero, pasar Posfijo
+3.	Si ^,x,/,+,-,(
+a.	Si Pila vacía, meter Pila Operador Repetir 1
+b.	Si Pila ¡= vacía:
+i.	Si Pila + leído > Prioridad 
+ii.	Si Pila +,-,x,/ < Prioridad
+4.	Si ) leído
+a.	Saltar +,-,x,/, mover a la ExpresiónPosfijo
+b.	Si nuevo tope ( Suprimir elemento Tope
+c.	Volver paso 1
+5.	Si quedaron elementos pasar a la ExpresiónPosfijo
+6.	Fin Algoritmo

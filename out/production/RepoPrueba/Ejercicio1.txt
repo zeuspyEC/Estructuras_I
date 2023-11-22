@@ -1,0 +1,79 @@
+Algoritmo Escritura;
+
+tamañoArreglo, x <- variables tipo entero
+
+Escribir "Ingrese el tamaño del arreglo"
+Leer tamañoArreglo
+arregloNumeros = arreglo [1...tamañoArreglo] de enteros
+Repetir con i desde 1 hasta tamañoArreglo
+	Escribir "Ingrese el dato a almacenar"
+	Leer x
+	Hacer arregloNumeros[i] <- x
+Fin repetir
+Fin algoritmo
+
+Algoritmo Busqueda;
+
+numeroABuscar, posicionEnArreglo <- variables de tipo entero
+encontrado <- variable de tipo booleana
+
+Escribir "Numero a buscar"
+Leer numeroABuscar
+Repetir con i desde 1 hasta tamañoArreglo
+	Si arregloNumeros[i] == numeroABuscar entonces
+		posicionEnArreglo <- arregloNumeros[i]
+		Hacer encontrado <- true
+Fin repetir
+Si encontrado == false entonces
+	Escribir "Numero no encontrado"
+Fin algoritmo
+
+Algoritmo Modificacion;
+
+numeroAModificar, numeroModificado <- variables de tipo entero
+Bool modificado <- variable de tipo booleana
+
+Escribir "Ingrese dato a modificar"
+Leer numeroAModificar
+Repetir con i desde 1 hasta tamañoArreglo
+	Si arregloNumeros[i] == numeroAModificar entonces
+		Leer numeroModificado
+		arregloNumeros[i] <- numeroModificado
+		Hacer modificado <- true 
+Fin repetir
+Si modificado == false entonces
+	Escribir "El numero no se encuentra en el arreglo "
+Fin algoritmo
+
+Algoritmo Eliminacion;
+
+numeroAEliminar <- variable entera
+eliminado <- variable booleana
+
+Escribir "Ingrese dato a eliminar"
+Leer numeroAELiminar
+Repetir con i desde 1 hasta tamañoArreglo
+	si arregloNumeros[i] == numeroAEliminar entonces
+		arregloNumeros[i] <- 0
+		eliminado <- true
+Fin repetir
+Si eliminado == False entonces
+	Escribir "El numero a eliminar no se encuentra en el arreglo"
+Fin algoritmo
+
+
+
+
+
+
+
+
+		  
+
+
+
+
+
+
+
+
