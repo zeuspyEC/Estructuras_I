@@ -1,0 +1,18 @@
+1. Obtener caracteres de la expresión y repetir pasos de 2 a 4 para todos los caracteres
+2. Si es un número entonces pasar a Postfijo
+3. Si ^, *, /, +, -, (: 
+3.1. Si Pila está vacía, entonces meter al operador en la pila, Repetir paso 1;
+3.2. Si Pila no está vacía: 
+Si Prioridad del operador leído > Prioridad del operador que esté en la cima
+de la pila: meterlo en la pila y repetir desde el paso 1;
+Si Prioridad del operador leído < Prioridad del operador que esté en la cima
+de la pila: sacar el operador de la cima de la pila y pasarlo a postfijo, repetir
+desde paso 3; 
+4. Si ) es leído:
+4.1. Sacar operador de la cima y pasarlo a expresión postfija
+4.2. Si el nuevo tope es (, suprimir elemento tope
+4.3. Si el nuevo tope no es (, volver al paso 4.1
+4.4. Volver al paso 1 
+5. Si quedan elementos en la pila, pasar a la expresión postfija
+6. Fin del Algoritmo
+  
