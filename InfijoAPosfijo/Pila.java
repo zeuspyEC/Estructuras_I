@@ -29,15 +29,17 @@ public class Pila {
     public void insertarEnPila(){
         if(this.isPilaLlena()){
             JOptionPane.showMessageDialog(null, "La pila está llena");
-        }else{
-            int dato;
-            dato = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese el dato"));
-            this.tope++;
-            this.pila[this.tope] = dato;
-
-            JOptionPane.showMessageDialog(null, "El dato "+dato+" Se insertó en la pila");
         }
-    }
+        while (!this.isPilaLlena()){
+                int dato;
+                dato = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese el dato"));
+                this.tope++;
+                this.pila[this.tope] = dato;
+
+                JOptionPane.showMessageDialog(null, "El dato "+dato+" Se insertó en la pila");
+            }
+        }
+
 
     public void eliminarDePila(){
         if(!this.isPilaVacia()){
