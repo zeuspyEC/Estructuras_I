@@ -1,0 +1,61 @@
+Frente -> F
+final -> f
+
+Algoritmo Cola Vacía (COLA S, F, f, B)
+
+ Si (F = 0 ^ f = 0)
+   entonces 
+     B <- V
+   Si no
+     B <- F
+ Fin si
+Fin Algoritmo Cola Vacía ()
+
+
+Algoritmo Cola Llena (COLA S, F, f, B, MAX)
+
+ Si (f = MAX)
+   entonces 
+     B <- V
+   Si no
+     B <- F
+ Fin si
+Fin Algoritmo Cola Llena ()
+
+
+
+Algoritmo Cola Insertar (COLA S, F, f, MAX, X)
+
+ Si (f = MAX)
+   entonces 
+     f <- f + 1 y COLA S [f] <- X
+   Si (f == 1)
+      entonces
+         F <- 1
+   Fin Si
+
+   Si no
+      Escribir "Desboramiento"
+ Fin si
+Fin Algoritmo Cola Insertar ()
+
+Algoritmo Cola ELIMINAR (COLA S, F, f, MAX)
+
+Si (F != 0)
+   entonces 
+     COLA S [f] <- NULL
+   Si (f == F)
+      entonces
+         F <- 0 y F <- 0
+   Si no
+         F <- F + 1
+   Fin si
+  
+ Si no
+   Escribir "Subdesbordamiento"
+ Fin Si
+
+Fin Algoritmo Cola Eliminar ()
+
+
+
